@@ -14,3 +14,20 @@ In this repository I plan to solve my robust control class exercises in 4 differ
 1. eigen
 
 ## Exercises  
+
+### Exercise 1
+
+Find the $H_2 \ norm$ of the this system:
+
+$$
+\dot{x} = \begin{bmatrix}
+    0 & 1 \\
+    -10 & -1
+\end{bmatrix} x + \begin{bmatrix}
+    0 \\
+    1
+\end{bmatrix}u \\
+y = \begin{bmatrix}
+    1 & 0
+\end{bmatrix} x
+$$
