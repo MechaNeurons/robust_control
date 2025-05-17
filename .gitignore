@@ -1,3 +1,4 @@
-vscode/
-*/build/
+.vscode/
+build/
 python/*/__pycache__/*
+cpp/eigen/

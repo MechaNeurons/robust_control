@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.20)
+project(robust_control LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(ex1 ex1.cpp)
+
+add_subdirectory(libs)
+include_directories(libs/robust_control)
+
+set(Eigen3_DIR ${CMAKE_SOURCE_DIR}/eigen/cmake)
+find_package(Eigen3 3.4 REQUIRED)
+
+target_link_libraries(ex1 PUBLIC robust_control
+    PUBLIC Eigen3::Eigen)
+
+# target_link_libraries(ex1 Eigen3::Eigen)
